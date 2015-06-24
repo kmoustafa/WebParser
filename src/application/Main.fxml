@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+  <tabs>
+    <Tab text="Tab1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="image2" fitHeight="167.0" fitWidth="257.0" layoutX="181.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                  <TextArea fx:id="textArea" layoutX="14.0" layoutY="21.0" prefHeight="136.0" prefWidth="200.0" visible="false">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></TextArea>
+                  <ProgressIndicator fx:id="prog" layoutX="283.0" layoutY="124.0" />
+                  <Label fx:id="conLabel" layoutX="266.0" layoutY="189.0" text="Connecting..." />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="tab2" disable="true" text="Tab2">
+      <content>
+            <ScrollPane prefViewportHeight="365.0" prefViewportWidth="600.0">
+               <content>
+              <AnchorPane fx:id="tab2Anchor" maxHeight="365.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+      </content>
+    </Tab>
+     <Tab fx:id="tab3" disable="true" text="Tab3">
+      <content>
+            <ScrollPane prefViewportHeight="365.0" prefViewportWidth="600.0">
+               <content>
+              <AnchorPane fx:id="tab3Anchor" maxHeight="365.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
